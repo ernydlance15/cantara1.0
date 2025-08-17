@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #121A79;
+    color: #FFFFFF;
+}
+
+header {
+    color: #76FF03;
+    width: 100%; /* Aseguramos que el header ocupe todo el ancho */
+    text-align: center;
+    padding: 20px 0; /* Reducimos el padding para ajustar el tamaño total */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header img {
+    width: 100px; /* Ajustamos el tamaño de la imagen */
+    height: auto; /* Mantenemos la proporción de la imagen */
+}
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px; /* Aseguramos que el formulario no sea demasiado ancho */
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #121212; /* Texto en color oscuro */
+}
+
+.bg-red {
+    background-color: #FF0000 !important; /* Fondo rojo */
+}
+
+.bg-green {
+    background-color: #00FF00 !important; /* Fondo verde */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #76FF03;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #121212;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #FFFFFF; /* Texto en blanco */
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 600px) {
+    header {
+        padding: 10px 0; /* Ajustamos el padding para dispositivos móviles */
+    }
+
+    header img {
+        width: 80px; /* Hacemos la imagen aún más pequeña en pantallas pequeñas */
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    form {
+        width: 90%; /* Aseguramos que el formulario ocupe la mayoría del ancho de la pantalla */
+    }
+}
